@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Maps XD Plugin</title>
+
+    <!-- <link href="styles.css" rel="stylesheet" /> -->
+    <link href="https://unpkg.com/tailwindcss@1.8.10/dist/tailwind.min.css" rel="stylesheet" />
+
+    <style>
+        @media (min-width:769px){
+            .for-mob{
+                display: none !important;
+            }
+        }
+
+        @media (max-width:768px){
+            .for-lg{display: none !important;}
+
+            .responsive-flex{
+                flex-direction: column;
+            }
+
+            header{
+                padding: 0 1rem;
+                margin-top: -0.4rem;
+            }
+
+            main{
+                margin-top: 0.3rem;
+                flex: none !important;
+                flex-direction: column-reverse;
+                justify-content: flex-start !important;
+            }
+
+            video{
+                max-height: 200px !important;
+                margin-bottom: 1rem;
+            }
+
+            h1{
+                margin-top: 0.5rem;
+                margin-bottom: 0.7rem !important;
+                padding: 0 1.5rem;
+                font-size: 1.4rem !important;
+                line-height: 1.6 !important;
+                font-weight: 400 !important;
+            }
+
+            li{
+                padding: 0.5rem 1.5rem;
+                text-align: center;
+                font-size: 1rem;
+            }
+
+            li svg{
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="h-screen flex flex-col bg-black text-white">
+    <header class="py-5 text-center">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center">
+                <img class="for-lg h-8 inline-block" src="logo.png" alt="" />
+                <img class="for-mob h-5 inline-block" src="logo.png" alt="" />
+                <span class="inline-block ml-3 for-lg text-2xl tracking-widest">Fancy Maps</span>
+                <span class="inline-block ml-3 for-mob text-lg">Fancy Maps</span>
+            </a>
+
+            <div class="for-lg flex items-center">
+                <a href="#" class="hover:underline mr-6">Terms of Use</a>
+                <a href="#" class="hover:underline mr-6">Privacy Policy</a>
+                <a href="#" class="py-2 px-6 bg-transparent hover:bg-white hover:bg-opacity-25 text-white text-base border border-gray-500 focus:outline-none rounded-full">
+                    Install Plugin
+                </a>
+            </div>
+
+            <div class="for-mob text-sm opacity-50 flex items-center text-white">
+                <a href="#" class="underline mr-5">Terms</a>
+                <a href="#" class="underline">Privacy</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1 container mx-auto flex items-center justify-between">
+        <div class="pb-8">
+            <h1 class="text-5xl leading-tight mb-6 font-thin mb-5" style="max-width: 400px;">
+                Add a map of any place to your design with just a few clicks.
+            </h1>
+    
+            <ul class="text-2xl font-hairline tracking-wide">
+                <li class="flex items-center py-1">
+                    <svg stroke="#03b1b9" class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                    Search for location or address
+                </li>
+
+                <li class="flex items-center py-1">
+                    <svg stroke="#03b1b9" class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                    Get A Random Location
+                </li>
+
+                <li class="flex items-center py-1">
+                    <svg stroke="#03b1b9" class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                    Pick a popular destination
+                </li>
+
+                <li class="flex items-center py-1">
+                    <svg stroke="#03b1b9" class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                    10 themes to pick from
+                </li>
+            </ul>
+
+            <a href="#" class="for-mob mx-6 mt-4 inline-block py-2 px-5 tracking-wide bg-transparent hover:bg-white hover:bg-opacity-25 text-white text-sm border-2 border-gray-800 focus:outline-none rounded-full">
+                Install Plugin
+            </a>
+        </div>
+
+        <div class="rounded-md shadow-lg overflow-hidden">
+            <video class="h-full object-cover" style="max-height: 450px;" src="video.mp4" poster="preview.png" controls></video>
+        </div>
+    </main>
+</body>
+</html>
